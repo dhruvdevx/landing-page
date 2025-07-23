@@ -2,44 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Dhruv Upadhyay – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Example font: Satoshi, change to favorite premium font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="hero">
-    <h1>Dhruv Upadhyay</h1>
-    <p>Full-Stack Developer</p>
-    <a href="#projects" class="cta-btn">See My Work</a>
+  <div class="background-noise"></div>
+  <header>
+    <nav>
+      <span class="logo">Dhruv Upadhyay</span>
+      <ul>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="hero">
+      <h1>Shipping Ideas <span class="gradient">to Code</span></h1>
+      <p>Full-stack developer. Building tools with purpose.</p>
+      <a class="primary-btn" href="#projects">View Projects</a>
+    </section>
   </header>
-  <nav class="navbar">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
   <main>
-    <section id="about" class="section">
+    <section id="projects" class="projects">
+      <article class="project-card">
+        <span class="tag">Featured</span>
+        <h2>Password Generator</h2>
+        <p>Clean, robust password tool for devs and security-minded users.</p>
+        <div class="actions">
+          <a href="https://dhruvdevx.github.io/dev-tools/" target="_blank" class="project-link">
+            <span>🔗 Launch Tool</span>
+          </a>
+          <a href="https://github.com/dhruvdevx/dev-tools" target="_blank" class="repo-link">GitHub</a>
+        </div>
+      </article>
+      <!-- Add more projects here -->
+    </section>
+    <section id="about" class="about">
       <h2>About</h2>
       <p>
-        Building fast, modern, and thoughtful web tools. Exploring new technology — sharing what I learn along the way.
-      </p>
-      <p>
-        <a class="icon-btn" href="https://github.com/dhruvdevx" target="_blank">GitHub</a>
+        Passionate about crafting digital tools that solve real-world problems.
+        Partial to elegant UIs, open source, and learning by doing.
+        <br>
+        Currently focused on <b>JavaScript</b>, <b>React</b>, <b>Node.js</b>, and full-stack product work.
       </p>
     </section>
-    <section id="projects" class="section">
-      <h2>Projects</h2>
-      <div class="project-card">
-        <h3>Password Generator</h3>
-        <p>A minimal, secure password generator for web developers and everyday users.</p>
-        <a class="accent-link" href="https://dhruvdevx.github.io/dev-tools/" target="_blank">🌐 Open Password Generator</a>
-        <a href="https://github.com/dhruvdevx/dev-tools" target="_blank">Source Code</a>
-      </div>
-    </section>
-    <section id="contact" class="section">
+    <section id="contact" class="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:dhruv@dhruvupadhyay.com">dhruv@dhruvupadhyay.com</a></p>
+      <p>
+        <a href="mailto:dhruv@dhruvupadhyay.com" class="contact-link">dhruv@dhruvupadhyay.com</a> /
+        <a href="https://github.com/dhruvdevx" target="_blank" class="contact-link">GitHub</a>
+      </p>
     </section>
   </main>
   <footer>
